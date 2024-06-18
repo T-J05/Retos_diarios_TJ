@@ -1,7 +1,7 @@
 def convertor_C_a_F (): #iniciamos una funcion
 
     red = '\033[91m' #ponemos el codigo ANSI del color rojo
-    end = '\033[0m'  #ponemos el codigo ANSI del color rojo
+    end = '\033[0m'  #ponemos el codigo ANSI para delimitar hasta donde va el color que inicalizamos anteriormente
 
     while True: #iniciamos el bucle 
         print('si desea parar el programa digite "00"') 
@@ -19,8 +19,7 @@ def convertor_C_a_F (): #iniciamos una funcion
             #si es que el usuario ingreso una cadena de caracteres se devuelve un msj de error con los colores 
             #antes definidos
         if celsius == str(celsius): 
-            #si es que el usuario ingreso una cadena de caracteres se devuelve un msj de error con los colores 
-            #antes definidos
+           
             print (f'{red} "error ingrese un numero entero o en decimales"{end}')
 
         #si es que el usuario ingresa 00 se termina el programa
